@@ -10,9 +10,9 @@
 		C49FC57C2A4F1040007873C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FC57B2A4F1040007873C5 /* AppDelegate.swift */; };
 		C49FC57E2A4F1040007873C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FC57D2A4F1040007873C5 /* SceneDelegate.swift */; };
 		C49FC5802A4F1040007873C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FC57F2A4F1040007873C5 /* ViewController.swift */; };
-		C49FC5832A4F1040007873C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49FC5812A4F1040007873C5 /* Main.storyboard */; };
 		C49FC5852A4F1042007873C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49FC5842A4F1042007873C5 /* Assets.xcassets */; };
 		C49FC5882A4F1042007873C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49FC5862A4F1042007873C5 /* LaunchScreen.storyboard */; };
+		C49FC5912A4F11E9007873C5 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = C49FC5902A4F11E9007873C5 /* web3swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		C49FC57B2A4F1040007873C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C49FC57D2A4F1040007873C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C49FC57F2A4F1040007873C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C49FC5822A4F1040007873C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C49FC5842A4F1042007873C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49FC5872A4F1042007873C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C49FC5892A4F1042007873C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49FC5912A4F11E9007873C5 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,6 @@
 				C49FC57B2A4F1040007873C5 /* AppDelegate.swift */,
 				C49FC57D2A4F1040007873C5 /* SceneDelegate.swift */,
 				C49FC57F2A4F1040007873C5 /* ViewController.swift */,
-				C49FC5812A4F1040007873C5 /* Main.storyboard */,
 				C49FC5842A4F1042007873C5 /* Assets.xcassets */,
 				C49FC5862A4F1042007873C5 /* LaunchScreen.storyboard */,
 				C49FC5892A4F1042007873C5 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = Web3_token_interface;
+			packageProductDependencies = (
+				C49FC5902A4F11E9007873C5 /* web3swift */,
+			);
 			productName = Web3_token_interface;
 			productReference = C49FC5782A4F1040007873C5 /* Web3_token_interface.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = C49FC56F2A4F1040007873C5;
+			packageReferences = (
+				C49FC58F2A4F11E9007873C5 /* XCRemoteSwiftPackageReference "web3swift" */,
+			);
 			productRefGroup = C49FC5792A4F1040007873C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				C49FC5882A4F1042007873C5 /* LaunchScreen.storyboard in Resources */,
 				C49FC5852A4F1042007873C5 /* Assets.xcassets in Resources */,
-				C49FC5832A4F1040007873C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C49FC5812A4F1040007873C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C49FC5822A4F1040007873C5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C49FC5862A4F1042007873C5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,8 +286,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Web3_token_interface/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,8 +313,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Web3_token_interface/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C49FC58F2A4F11E9007873C5 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C49FC5902A4F11E9007873C5 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C49FC58F2A4F11E9007873C5 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C49FC5702A4F1040007873C5 /* Project object */;
 }
